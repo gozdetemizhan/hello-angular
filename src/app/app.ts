@@ -8,7 +8,7 @@ import { HeroBannerComponent } from './hero-banner/hero-banner.component';
   selector: 'app-root',
   imports: [CommonModule, Hello, Banner, HeroBannerComponent],
   templateUrl: './app.html',
-  standalone: true,
+  // standalone: true,
   styleUrl: './app.scss'
 })
 export class App {
