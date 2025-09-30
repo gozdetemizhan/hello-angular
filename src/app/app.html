@@ -1,4 +1,9 @@
-<h1>Hello, {{ title() }}</h1>
-<app-banner></app-banner>
-<app-hello> </app-hello>
-<!-- <app-hello name="test"  (greeted)="onGreet($event)"></app-hello> -->
+<div class="app-container">
+  <h1>Hello, {{ title() }}</h1>
+  <app-banner></app-banner>
+  <app-hero-banner 
+    [image]="'https://picsum.photos/600/400?random=1'" 
+    [url]="'https://example.com'" 
+    [title]="'Welcome to Our Store!'">
+  </app-hero-banner>
+</div>

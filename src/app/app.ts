@@ -1,10 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component, EventEmitter, Input, Output, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Hello } from './hello/hello';
 import { Banner } from './banner/banner';
+import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 
 @Component({
   selector: 'app-root',
-  imports: [Hello, Banner],
+  imports: [CommonModule, Hello, Banner, HeroBannerComponent],
   templateUrl: './app.html',
   standalone: true,
   styleUrl: './app.scss'
@@ -12,10 +14,5 @@ import { Banner } from './banner/banner';
 export class App {
   protected readonly title = signal('AKBANK');
 }
-  
-// export class App{
-//   title='AKBANK'
-// }
 
-// onGreet
 
